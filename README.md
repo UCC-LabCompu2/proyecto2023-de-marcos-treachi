@@ -1,9 +1,16 @@
 # F1:racing_car:
-- **Treachi Pefaure,** Belen https://github.com/belutreachi
 
-- **de Marcos,** Margarita https://github.com/margarita0912
+## Autores:
+- **Treachi Pefaure**, Belen (https://github.com/belutreachi)
+- **de Marcos**, Margarita (https://github.com/margarita0912)
 
-- Usamos HTML y CSS
+### Contenido:
+- Pagina web de un auto de Formula 1 con Movimiento Rectilineo Uniformemente Variado
+
+### Herramientas usadas:
+- HTML 
+- CSS
+
 
 
 # proyecto2023
