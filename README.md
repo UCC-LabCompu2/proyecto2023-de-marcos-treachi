@@ -4,8 +4,12 @@
 - **Treachi Pefaure**, Belen (https://github.com/belutreachi)
 - **de Marcos**, Margarita (https://github.com/margarita0912)
 
+## GH-page:
+- https://ucc-labcompu2.github.io/proyecto2023-de-marcos-treachi/
+
 ### Contenido:
-- Pagina web de un auto de Formula 1 con Movimiento Rectilineo Uniformemente Variado
+- Pagina web de un auto de Formula 1 con Movimiento Rectilineo
+Uniformemente Variado (MRUV)
 
 ### Herramientas usadas:
 - HTML 
