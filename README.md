@@ -1,11 +1,11 @@
 # F1:racing_car:
 
 ## Autores:
-- **Treachi Pefaure**, Belen (https://github.com/belutreachi)
-- **de Marcos**, Margarita (https://github.com/margarita0912)
+- **Treachi Pefaure**, Belen 
+- **de Marcos**, Margarita 
 
 ## GH-page:
-- https://ucc-labcompu2.github.io/proyecto2023-de-marcos-treachi/
+- [Proyecto](https://ucc-labcompu2.github.io/proyecto2023-de-marcos-treachi/index.html)
 
 ### Contenido:
 - Pagina web de un auto de Formula 1 con Movimiento Rectilineo
