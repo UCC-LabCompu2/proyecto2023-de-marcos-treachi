@@ -1,3 +1,9 @@
+#F1:racing_car:
+Treachi Pefaure Belen https://github.com/belutreachi
+de Marcos Margarita https://github.com/margarita0912
+Usamos HTML y CSS
+
+
 # proyecto2023
 Estructura de Proyecto Lab de Compu II - 2023
 
