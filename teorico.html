@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>teorico</title>
+  <title>TEÓRICO</title>
   <meta content="de Marcos Margarita y Treachi Belen" name="autores">
   <meta content="Pagina web proyecto para Laboratorio de Computacion 2" name="descripcion">
   <meta content="auto, f1, MRUV, movimiento, fisica, formulas" name="palabras-clave">
@@ -26,7 +26,7 @@
   <h3>
     <strong>¿Cuáles son sus principales características?</strong>
   </h3>
-  <ul>
+  <ul class="caracteristicas">
     <li>Su trayectoria es en línea recta, lo que significa que es un movimiento que
       se mueve en una dimensión</li>
     <li>Su aceleración es diferente de cero, esto es lo que diferencia de un mru.</li>
@@ -39,7 +39,7 @@
     <strong> Magnitudes que intervienen: </strong>
   </h3>
   <ul>
-    <li>Velocidad inicial (v0): es la velocidad con la que comienza el movimiento. Se mide en metros
+    <li>Velocidad inicial (v<sub>0</sub>): es la velocidad con la que comienza el movimiento. Se mide en metros
       sobre segundos (m/s).</li>
     <li>Velocidad final (v): es la velocidad con la que finaliza. Se mide en metros
       sobre segundos (m/s).</li>
@@ -47,17 +47,17 @@
       Se mide en segundos (s).</li>
     <li>Aceleración (a): es la magnitud que mide el cambio de velocidad por unidad
       de tiempo. Si es positiva significa que la velocidad va aumentando y si es
-      negativa, que la velocidad va disminuyendo (frenado). Se mide en metros sobre segundos^2
-      (m/s^2).</li>
+      negativa, que la velocidad va disminuyendo (frenado). Se mide en metros sobre segundos cuadrados
+      (m/s<sup>2</sup>).</li>
     <li>Distancia (x): es la distancia total que recorre en el tiempo especificado,
-      es decir entre la v0 y la vf indicadas. Se mide en metros (m).</li>
-    <li>Distancia inicial (x0): es la distancia del terreno en la que se encuentra, antes
+      es decir entre la v<sub>0</sub> y la v<sub>f</sub> indicadas. Se mide en metros (m).</li>
+    <li>Distancia inicial (x<sub>0</sub>): es la distancia del terreno en la que se encuentra, antes
       de comenzar a calcular. Se mide en metros (m).</li>
   </ul>
   <h3>
     <strong>FORMULAS:</strong>
   </h3>
-  <p>
+  <p id="formulas">
     v=v₀+a*t<br>
     x=x₀+v₀*t+0.5*a*t<sup>2</sup><br>
     x=0.5*t(v+v₀)<br>
