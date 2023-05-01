@@ -32,26 +32,26 @@ Estructura de Proyecto Lab de Compu II - 2023
 
 ### Sobre el Proyecto General
 - [x] La página principal debe llamarse index
-- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
+- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+i)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Se debe emplear algún favicon
 - [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
-- [ ] Debe haber navegación entre todas las páginas
+- [x] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
-- [ ] Todas las etiquetas deben estar en minúscula
+- [x] Todas las etiquetas deben estar en minúscula
 - [ ] Poner comillas a todos los atributos
 - [x] Title debe contener el título de la página
 - [x] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
-- [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
+- [x] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
 - [x] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [x] Debe haber por lo menos una etiqueta ```<img>``` en la página.
-- [ ] La estructura de la página debe estar definida con ```<div></div>```
+- [x] La estructura de la página debe estar definida con ```<div></div>```
 - [x] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
-- [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
+- [x] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
 - [ ] No utilizar etiquetas deprecadas.
-- [ ] Todas las etiquetas deben estar correctamente cerradas
+- [x] Todas las etiquetas deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
 
 ### Sobre el CSS
