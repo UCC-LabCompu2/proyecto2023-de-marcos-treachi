@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    font-size: large;
+    font-family: 'Outfit', sans-serif;
+}
+header{
+    background-color: rgba(255, 255, 0, 0.97);
+    font-family: 'Bruno Ace SC', sans-serif;
+}
+.caracteristicas{
+    text-align: left;
+    display: inline-block;
+}
+.datos{
+    display: inline-block;
+    text-align: justify;
+}
+.caracteristicas{
+    text-align: justify;
+}
+.formulas{
+    text-align: left;
+}
+p{
+    text-align: justify;
+}
+#imgvelocimetro{
+    float: right;
+}
+a{
+    font-size: x-large;
+    background-color: #e00505;
+    padding: 10px;
+
+}
+a:link, a:visited{
+    color: black;
+}
+a:hover{
+    font-size: 2em;
+    background-color: #ff000e;
+    -webkit-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+#botoninicio{
+    font-size: 0.9em;
+}
+#botonpractico{
+    border: black 3px solid;
+}

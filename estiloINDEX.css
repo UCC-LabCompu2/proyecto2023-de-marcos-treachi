@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    font-size: large;
+    font-family: 'Outfit', sans-serif;
+}
+header{
+    text-align: center;
+    background: linear-gradient(to right, darkred,red,darkred);
+    font-family: 'Bruno Ace SC', sans-serif;
+}
+
+p{
+    font-size: large;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: justify;
+}
+#imgband1{
+    float: left;
+    padding-left: 320px;
+}
+#imgband2{
+    float: right;
+    padding-right: 320px;
+}
+a{
+    font-size: x-large;
+    background-color: #e00505;
+    padding: 10px;
+    border: black 3px solid;
+}
+a:link, a:visited{
+    color: black;
+}
+a:hover{
+    font-size: 2em;
+    background-color: #ff000e;
+    -webkit-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+#imgauto{
+    float: right;
+    padding-right: 293px;
+}
