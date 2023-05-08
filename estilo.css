@@ -52,6 +52,7 @@ a:hover{
     color: black;
     background-color: red;
     margin-left: 300px;
+    font-size: large;
 }
 table, td, th {
     border: 1px solid #000000;
