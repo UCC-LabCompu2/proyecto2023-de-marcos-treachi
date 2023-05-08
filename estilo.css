@@ -65,3 +65,7 @@ table, td, th {
     margin-left: auto;
     margin-right: auto;
 }
+
+.botones{
+    text-align: center;
+}
