@@ -28,11 +28,35 @@ ul {
 #imgband1 {
     float: left;
     padding-left: 320px;
+    height: 40.8px;
+    width: 64.2px;
 }
 
 #imgband2 {
     float: right;
     padding-right: 320px;
+    height: 40.8px;
+    width: 64.2px;
+}
+
+#imgautofrente{
+    height: 136.75px;
+    width: 125.5px;
+}
+
+#img3fotos{
+    height: 150px;
+    width: 400px;
+}
+
+#imgvelocimetro{
+    height: 200px;
+    width: 204px;
+}
+
+#imgautoperfil{
+    height: 200px;
+    width: 204px;
 }
 
 a {
