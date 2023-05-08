@@ -13,6 +13,8 @@ p{
     margin-right: 200px;
     margin-left: 200px;
     text-align: justify;
+    margin-top:25px;
+    margin-bottom:25px
 }
 ul{
     margin-right: 200px;
@@ -30,14 +32,14 @@ ul{
 a {
     font-size: x-large;
     background-color: red;
-    padding: 10px;
+    padding: 7px;
     border: black 3px solid;
 }
 a:link, a:visited{
     color: black;
 }
 a:hover{
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: #b61818;
     -webkit-transition: background-color 0.4s linear;
     transition: background-color 0.4s linear;
