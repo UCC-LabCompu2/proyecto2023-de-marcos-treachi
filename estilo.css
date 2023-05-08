@@ -12,11 +12,8 @@ body {
 
 p {
     font-size: large;
-    margin-right: 200px;
-    margin-left: 200px;
     text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 25px
+    margin: 30px 200px 30px 200px;
 }
 
 ul {
@@ -39,22 +36,23 @@ ul {
     width: 64.2px;
 }
 
-#imgautofrente{
+#imgautofrente {
     height: 136.75px;
     width: 125.5px;
 }
 
-#img3fotos{
+#img3fotos {
     height: 150px;
     width: 400px;
 }
 
-#imgvelocimetro{
+#imgvelocimetro {
     height: 200px;
     width: 204px;
+    float: right;
 }
 
-#imgautoperfil{
+#imgautoperfil {
     height: 200px;
     width: 204px;
 }
@@ -75,10 +73,6 @@ a:hover {
     background-color: #b61818;
     -webkit-transition: background-color 0.4s linear;
     transition: background-color 0.4s linear;
-}
-
-#imgvelocimetro {
-    float: right;
 }
 
 .formulas {
