@@ -7,8 +7,10 @@
     <meta content="Pagina web proyecto para Laboratorio de Computacion 2" name="descripcion">
     <meta content="auto, f1, MRUV, movimiento, fisica, formulas" name="palabras-clave">
     <link rel="shortcut icon" href="imagenes/fav_f1.png">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@300;500&family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=DynaPuff:wght@500&family=Roboto+Slab&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@300;500&family=Staatliches&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=DynaPuff:wght@500&family=Roboto+Slab&family=Sedgwick+Ave+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="estilo.css" type="text/css">
 </head>
 <body>
@@ -23,18 +25,24 @@
 <form>
     <div class="form-group">
         <label for="x0">DISTANCIA INICIAL (x₀): </label>
-        <input type="range" id="x0" name="a" value="0" min="0" max="25" step="0.5" oninput="this.nextElementSibling.value = this.value">
-        <output>0</output> m
+        <input type="range" id="x0" name="a" value="0" min="0" max="25" step="0.5"
+               oninput="this.nextElementSibling.value = this.value">
+        <output>0</output>
+        m
     </div>
     <div class="form-group">
         <label for="v0">VELOCIDAD INICIAL (v₀): </label>
-        <input type="range" id="v0" name="a" value="0" min="0" max="15" step="0.1" oninput="this.nextElementSibling.value = this.value">
-        <output>0</output> m/s
+        <input type="range" id="v0" name="a" value="0" min="0" max="15" step="0.1"
+               oninput="this.nextElementSibling.value = this.value">
+        <output>0</output>
+        m/s
     </div>
     <div class="form-group">
         <label for="a">ACELERACION (m/s<sup>2</sup>): </label>
-        <input type="range" id="a" name="a" value="0" min="0" max="10" step="0.1" oninput="this.nextElementSibling.value = this.value">
-        <output>0</output> m/s<sup>2</sup>
+        <input type="range" id="a" name="a" value="0" min="0" max="10" step="0.1"
+               oninput="this.nextElementSibling.value = this.value">
+        <output>0</output>
+        m/s<sup>2</sup>
     </div>
     <p>
         <button type="submit" id="botoncalc" class="btn btn-primary mb-2">
@@ -65,7 +73,7 @@
     </thead>
     <tbody>
     <tr>
-        <th> DISTANCIA (m) </th>
+        <th> DISTANCIA (m)</th>
         <td></td>
         <td></td>
         <td></td>
@@ -94,7 +102,7 @@
 </table>
 <div>
     <p class="botones">
-        <a id="botonteorico" href="teorico.html" target="_blank" >VOLVER AL TEORICO</a>
+        <a id="botonteorico" href="teorico.html" target="_blank">VOLVER AL TEORICO</a>
     </p>
 </div>
 <div>

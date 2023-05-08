@@ -1,61 +1,73 @@
-header{
+header {
     text-align: center;
-    background: linear-gradient(to right, darkred,red,darkred);
+    background: linear-gradient(to right, darkred, red, darkred);
     font-family: 'Bruno Ace SC', sans-serif;
 }
-body{
+
+body {
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: large;
 }
-p{
+
+p {
     font-size: large;
     margin-right: 200px;
     margin-left: 200px;
     text-align: justify;
-    margin-top:25px;
-    margin-bottom:25px
+    margin-top: 25px;
+    margin-bottom: 25px
 }
-ul{
+
+ul {
     margin-right: 200px;
     margin-left: 200px;
     text-align: justify;
 }
-#imgband1{
+
+#imgband1 {
     float: left;
     padding-left: 320px;
 }
-#imgband2{
+
+#imgband2 {
     float: right;
     padding-right: 320px;
 }
+
 a {
     font-size: x-large;
     background-color: red;
     padding: 7px;
     border: black 3px solid;
 }
-a:link, a:visited{
+
+a:link, a:visited {
     color: black;
 }
-a:hover{
+
+a:hover {
     font-size: 1.5em;
     background-color: #b61818;
     -webkit-transition: background-color 0.4s linear;
     transition: background-color 0.4s linear;
 }
+
 #imgvelocimetro {
     float: right;
 }
-.formulas{
+
+.formulas {
     text-align: left;
 }
-.btn-primary{
+
+.btn-primary {
     color: black;
     background-color: red;
     margin-left: 300px;
     font-size: large;
 }
+
 table, td, th {
     border: 1px solid #000000;
     border-spacing: 0;
@@ -66,6 +78,6 @@ table, td, th {
     margin-right: auto;
 }
 
-.botones{
+.botones {
     text-align: center;
 }
