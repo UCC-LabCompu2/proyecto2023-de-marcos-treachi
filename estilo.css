@@ -10,13 +10,13 @@ body{
 }
 p{
     font-size: large;
-    margin-right: 300px;
-    margin-left: 300px;
+    margin-right: 200px;
+    margin-left: 200px;
     text-align: justify;
 }
 ul{
-    margin-right: 300px;
-    margin-left: 300px;
+    margin-right: 200px;
+    margin-left: 200px;
     text-align: justify;
 }
 #imgband1{
@@ -29,7 +29,7 @@ ul{
 }
 a {
     font-size: x-large;
-    background-color: #e00505;
+    background-color: red;
     padding: 10px;
     border: black 3px solid;
 }
@@ -38,7 +38,7 @@ a:link, a:visited{
 }
 a:hover{
     font-size: 2em;
-    background-color: #ff000e;
+    background-color: #b61818;
     -webkit-transition: background-color 0.4s linear;
     transition: background-color 0.4s linear;
 }
@@ -49,7 +49,9 @@ a:hover{
     text-align: left;
 }
 .btn-primary{
-    margin-left: 215px;
+    color: black;
+    background-color: red;
+    margin-left: 300px;
 }
 table, td, th {
     border: 1px solid #000000;
