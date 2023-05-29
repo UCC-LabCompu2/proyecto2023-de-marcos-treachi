@@ -9,6 +9,11 @@ let mostrarValor = (elementId, value) => {
     document.getElementById(elementId).textContent = value;
 }
 
+/**
+ * Calcula la velocidad final y distancia final en la tabla en los segundos 0 a 9
+ * @method calcular
+ */
+
 let calcular = () => {
     let vi, di, a, tabla, res, t, vf, df, filaV, filaD ,filas;
     di = parseFloat(document.getElementById("x0").value);
@@ -19,7 +24,7 @@ let calcular = () => {
         alert("Solo 1 dato puede ser igual a 0.");
     }
 
-    tabla = document.getElementById("tablaResultados");
+    tabla = document.getElementById("resultados");
     res = tabla.getElementsByTagName("tbody")[0];
     filas = res.getElementsByTagName("tr");
 
