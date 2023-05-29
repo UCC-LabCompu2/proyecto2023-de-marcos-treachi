@@ -27,25 +27,22 @@
     <div class="form-group">
         <label for="x0">DISTANCIA INICIAL (x₀): </label>
         <input type="range" id="x0" name="distanciainicial" value="0" min="0" max="25" step="0.5"
-               oninput="this.nextElementSibling.value = this.value"
-               onchange="posicion0()">
-        <output>0</output>
+               oninput="mostrarValor('valor_di', this.value)">
+        <span id="valor_di">0</span>
         m
     </div>
     <div class="form-group">
         <label for="v0">VELOCIDAD INICIAL (v₀): </label>
-        <input type="range" id="v0" name="velocidadinicial" value="0" min="0" max="15" step="0.1"
-               oninput="this.nextElementSibling.value = this.value"
-               onchange="posicion0()">
-        <output>0</output>
+        <input type="range" id="v0" value="0" min="0" max="15" step="0.1"
+               oninput="mostrarValor('valor_vi', this.value)">
+        <span id="valor_vi">0</span>
         m/s
     </div>
     <div class="form-group">
         <label for="a">ACELERACION (m/s<sup>2</sup>): </label>
         <input type="range" id="a" name="aceleracion" value="0" min="0" max="10" step="0.1"
-               oninput="this.nextElementSibling.value = this.value"
-               onchange="posicion0()">
-        <output>0</output>
+               oninput="mostrarValor('valor_a', this.value)">
+        <span id="valor_a">0</span>
         m/s<sup>2</sup>
     </div>
     <p>
@@ -58,7 +55,7 @@
 <canvas id="canvas">
     El navegador no soporta el canvas.
 </canvas>
-<table>
+<table id="tablaResultados">
     <caption>RESULTADOS</caption>
     <thead>
     <tr>
@@ -78,29 +75,29 @@
     <tbody id="resultados">
     <tr id="d_total">
         <th> DISTANCIA (m)</th>
-        <td><span id="totald0" name="total_d0">m</span></td>
-        <td><span id="totald1" name="total_d1">m</span></td>
-        <td><span id="totald2" name="total_d2">m</span></td>
-        <td><span id="totald3" name="total_d3">m</span></td>
-        <td><span id="totald4" name="total_d4">m</span></td>
-        <td><span id="totald5" name="total_d5">m</span></td>
-        <td><span id="totald6" name="total_d6">m</span></td>
-        <td><span id="totald7" name="total_d7">m</span></td>
-        <td><span id="totald8" name="total_d8">m</span></td>
-        <td><span id="totald9" name="total_d9">m</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr id="v_total">
         <th>VELOCIDAD (m/s)</th>
-        <td><span id="totalv0" name="total_v0">m/s</span></td>
-        <td><span id="totalv1" name="total_v1">m/s</span></td>
-        <td><span id="totalv2" name="total_v2">m/s</span></td>
-        <td><span id="totalv3" name="total_v3">m/s</span></td>
-        <td><span id="totalv4" name="total_v4">m/s</span></td>
-        <td><span id="totalv5" name="total_v5">m/s</span></td>
-        <td><span id="totalv6" name="total_v6">m/s</span></td>
-        <td><span id="totalv7" name="total_v7">m/s</span></td>
-        <td><span id="totalv8" name="total_v8">m/s</span></td>
-        <td><span id="totalv9" name="total_v9">m/s</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     </tbody>
 </table>
@@ -114,5 +111,6 @@
         <a href="index.html">VOLVER AL INICIO</a>
     </p>
 </div>
+
 </body>
 </html>
