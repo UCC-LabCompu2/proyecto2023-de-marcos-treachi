@@ -72,3 +72,16 @@ let comenzarAnimacion = () => {
     setTimeout(detenerAuto, 1500);
 }
 
+let aparecerimagen = () => {
+    const canvas = document.getElementById("mycanvas");
+    const ctx = canvas.getContext("2d");
+
+    let img = new Image();
+    img.src = "imagenes/zyro.png";
+
+    img.onload = function () {
+        canvas.width=canvas.width;
+        ctx.drawImage(img, x, 0);
+    }
+
+}
