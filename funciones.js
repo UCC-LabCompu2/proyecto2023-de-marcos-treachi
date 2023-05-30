@@ -44,20 +44,20 @@ let calcular = () => {
 var x = 0;
 var dx = 2;
 let animarImagen = () => {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("mycanvas");
     const ctx = canvas.getContext("2d");
 
     let img = new Image();
-    img.src = "imagenes/autodeperfil.JPG";
+    img.src = "imagenes/zyro.png";
 
     img.onload = function () {
-        canvas.width = canvas.width;
-        ctx.drawImage(img, x, 100);
+        canvas.width=canvas.width;
+        ctx.drawImage(img, x, 0);
     }
-    x += dx;
-    console.log("La coordenada X es: "+x);
+    x = x+dx;
+    console.log("la coordenada x es: "+ x);
     if (x>canvas.width){
-        x = 0;
+        x=0;
     }
 }
 
