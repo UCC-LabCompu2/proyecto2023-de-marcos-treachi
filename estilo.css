@@ -99,3 +99,10 @@ table, td, th {
 .botones {
     text-align: center;
 }
+
+canvas{
+    background-color: aquamarine;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+}
