@@ -1,12 +1,11 @@
 /**
- * Descripción de que hace la función
- * @method Nombre de la función
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * Muestra el valor del dato que se ingresa en la barra
+ * @method mostrarValor
+ * @param {string} id - Id del elemento input del HTML
+ * @param {number} valor - Contiene el valor del input que ingreso el usuario en la barra
  */
-let mostrarValor = (elementId, value) => {
-    document.getElementById(elementId).textContent = value;
+let mostrarValor = (id, valor) => {
+    document.getElementById(id).textContent = valor;
 }
 
 /**
