@@ -60,4 +60,15 @@ let animarImagen = () => {
         x=0;
     }
 }
+var timeoutId;
+let detenerAuto = () => {
+    console.log("Se detuvo el auto")
+    clearInterval(intervalId); // Detener la animación
+}
+
+let comenzarAnimacion = () => {
+    console.log("Se llamo a comenzar animacion")
+    intervalId = setInterval(animarImagen, 0);
+    setTimeout(detenerAuto, 1500);
+}
 
