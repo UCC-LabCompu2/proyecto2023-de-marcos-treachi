@@ -96,6 +96,10 @@ table, td, th {
     margin-right: auto;
 }
 
+td{
+    width: 50px;
+}
+
 .botones {
     text-align: center;
 }

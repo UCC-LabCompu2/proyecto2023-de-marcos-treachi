@@ -60,7 +60,7 @@ let animarImagen = () => {
         x=0;
     }
 }
-var timeoutId;
+
 let detenerAuto = () => {
     console.log("Se detuvo el auto")
     clearInterval(intervalId); // Detener la animación
@@ -83,5 +83,4 @@ let aparecerimagen = () => {
         canvas.width=canvas.width;
         ctx.drawImage(img, x, 0);
     }
-
 }
