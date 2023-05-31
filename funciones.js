@@ -77,7 +77,7 @@ let aparecerimagen = () => {
     const ctx = canvas.getContext("2d");
 
     let img = new Image();
-    img.src = "imagenes/zyro.png";
+    img.src = "imagenes/autocanvas.png";
 
     img.onload = function () {
         canvas.width=canvas.width;
