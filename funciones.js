@@ -41,8 +41,8 @@ let calcular = () => {
 }
 
 /**
- * Calcula velocidad y distancia final de 0 a 9 segundos, colocando resultados en la tabla
- * @method calcular
+ * Hace que el auto se mueva a lo largo del canvas, teniendo en cuenta la velocidad inicial
+ * @method animarImagen
  */
 
 var x = 0; //variable global
