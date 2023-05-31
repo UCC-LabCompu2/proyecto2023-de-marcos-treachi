@@ -48,7 +48,7 @@ let animarImagen = () => {
     const ctx = canvas.getContext("2d");
 
     let img = new Image();
-    img.src = "imagenes/zyro.png";
+    img.src = "imagenes/autocanvas.png";
 
     img.onload = function () {
         canvas.width=canvas.width;
@@ -67,12 +67,12 @@ let detenerAuto = () => {
 }
 
 let comenzarAnimacion = () => {
-    console.log("Se llamo a comenzar animacion")
+    console.log("Comenzo la animacion")
     intervalId = setInterval(animarImagen, 0);
     setTimeout(detenerAuto, 1500);
 }
 
-let aparecerimagen = () => {
+let aparecerImagen = () => {
     const canvas = document.getElementById("mycanvas");
     const ctx = canvas.getContext("2d");
 
