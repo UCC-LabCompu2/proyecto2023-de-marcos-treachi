@@ -15,17 +15,21 @@ let mostrarValor = (id, valor) => {
 let calcular = () => {
     let vi, di, a, tabla, res, t, vf, df, filaV, filaD, filas;
 
-    di = parseFloat(document.getElementById("x0").value);
-    vi = parseFloat(document.getElementById("v0").value);
-    a = parseFloat(document.getElementById("a").value);
+    di = parseFloat(document.getElementById("x0").value); //obtenemos el valor de la posicion inicial ingresada
+    vi = parseFloat(document.getElementById("v0").value); //obtenemos el valor de la velocidad inicial ingresada
+    a = parseFloat(document.getElementById("a").value); //obtenemos el valor de la aceleracion ingresada
 
     if ((vi === 0 && a === 0) || (vi === 0 && di === 0) || (di === 0 && a === 0) || (vi === 0 && di === 0 && a === 0)) {
         alert("Solo 1 dato puede ser igual a 0.");
+        document.getElementById("x0").value = 0;
+        document.getElementById("v0").value = 0;
+        document.getElementById("a").value = 0;
+
     }
 
-    tabla = document.getElementById("tabla"); //le asigna a tabla el id de la etiqueta table
-    res = tabla.getElementsByTagName("tbody")[0];
-    filas = res.getElementsByTagName("tr");
+    tabla = document.getElementById("tabla"); //obtenemos la tabla
+    res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
+    filas = res.getElementsByTagName("tr"); //obtenemos todos los elementos tr (filas) del tbody
 
     filaD = filas[0].getElementsByTagName("td"); //le asigna a filaD las celdas(td) de la fila[0] (tr)
     filaV = filas[1].getElementsByTagName("td"); //le asigna a filaF las celdas(td) de la fila[1] (tr)
