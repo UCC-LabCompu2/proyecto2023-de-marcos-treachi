@@ -20,10 +20,16 @@ let calcular = () => {
     a = parseFloat(document.getElementById("a").value); //obtenemos el valor de la aceleracion ingresada
 
     if ((vi === 0 && a === 0) || (vi === 0 && di === 0) || (di === 0 && a === 0) || (vi === 0 && di === 0 && a === 0)) {
-        alert("Solo 1 dato puede ser igual a 0.");
+       alert("Solo 1 dato puede ser igual a 0.");
         document.getElementById("x0").value = 0;
         document.getElementById("v0").value = 0;
         document.getElementById("a").value = 0;
+
+        document.getElementById("valor_di").textContent =0;
+        document.getElementById("valor_vi").textContent =0;
+        document.getElementById("valor_a").textContent =0;
+
+        mostrarValor(id,valor=0);
     } else {
         tabla = document.getElementById("tabla"); //obtenemos la tabla
         res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
