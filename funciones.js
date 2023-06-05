@@ -13,32 +13,38 @@ let mostrarValor = (id, valor) => {
  * @method calcular
  */
 let calcular = () => {
-    let vi, di, a, tabla, res, t, vf, df, filaV, filaD, filas;
+    let vi, di, a, tabla, res, t, vf, df, filaV, filaD, filas, i;
 
     di = parseFloat(document.getElementById("x0").value); //obtenemos el valor de la posicion inicial ingresada
     vi = parseFloat(document.getElementById("v0").value); //obtenemos el valor de la velocidad inicial ingresada
     a = parseFloat(document.getElementById("a").value); //obtenemos el valor de la aceleracion ingresada
 
+    tabla = document.getElementById("tabla"); //obtenemos la tabla
+    res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
+    filas = res.getElementsByTagName("tr"); //obtenemos todos los elementos tr (filas) del tbody
+
+    filaD = filas[0].getElementsByTagName("td"); //le asigna a filaD las celdas(td) de la fila[0] (tr)
+    filaV = filas[1].getElementsByTagName("td"); //le asigna a filaF las celdas(td) de la fila[1] (tr)
+
     if ((vi === 0 && a === 0) || (vi === 0 && di === 0) || (di === 0 && a === 0) || (vi === 0 && di === 0 && a === 0)) {
        alert("Solo 1 dato puede ser igual a 0.");
+
         document.getElementById("x0").value = 0;
         document.getElementById("v0").value = 0;
-        document.getElementById("a").value = 0;
+        document.getElementById("a").value = 0;//reinicia la barra
 
-        document.getElementById("valor_di").textContent =0;
-        document.getElementById("valor_vi").textContent =0;
-        document.getElementById("valor_a").textContent =0;
+        document.getElementById("valor_di").textContent ='0';
+        document.getElementById("valor_vi").textContent ='0';
+        document.getElementById("valor_a").textContent ='0';//borra el numero del input
 
+        for (i = 0; i <= 9; i++) {
+            filaD[i].textContent = ' ';
+            filaV[i].textContent = ' ';//borra la tabla
+        }
         mostrarValor(id,valor=0);
+
     } else {
-        tabla = document.getElementById("tabla"); //obtenemos la tabla
-        res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
-        filas = res.getElementsByTagName("tr"); //obtenemos todos los elementos tr (filas) del tbody
-
-        filaD = filas[0].getElementsByTagName("td"); //le asigna a filaD las celdas(td) de la fila[0] (tr)
-        filaV = filas[1].getElementsByTagName("td"); //le asigna a filaF las celdas(td) de la fila[1] (tr)
-
-        for (let i = 0; i <= 9; i++) {
+        for (i = 0; i <= 9; i++) {//calcula la tabla
             t = i;
             df = di + (vi * t) + (0.5 * a * Math.pow(t, 2));//formula distancia final
             vf = vi + (a * t);//formula velocidad final
@@ -67,11 +73,11 @@ let animarImagen = () => {
     img.src = "imagenes/autocanvas.png";
 
     img.onload = function () {
-        canvas.width = canvas.width;
+        canvas.width = canvas.width;//va borrando el canvas
         ctx.drawImage(img, x, 0);
     }
 
-    if (vi >= 11.25) { //aumenta velocidad de movimiento segun la velocidad inicial ingresada en el input
+    if (vi >= 11.25) { //modifica velocidad de movimiento de la imagen segun la velocidad inicial ingresada en el input
         dx = 2;
         x = x + dx;
     } else if ((vi >= 7.5) && (vi < 11.25)) {
