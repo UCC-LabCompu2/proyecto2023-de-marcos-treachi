@@ -24,32 +24,31 @@ let calcular = () => {
         document.getElementById("x0").value = 0;
         document.getElementById("v0").value = 0;
         document.getElementById("a").value = 0;
+    } else {
+        tabla = document.getElementById("tabla"); //obtenemos la tabla
+        res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
+        filas = res.getElementsByTagName("tr"); //obtenemos todos los elementos tr (filas) del tbody
 
-    }
+        filaD = filas[0].getElementsByTagName("td"); //le asigna a filaD las celdas(td) de la fila[0] (tr)
+        filaV = filas[1].getElementsByTagName("td"); //le asigna a filaF las celdas(td) de la fila[1] (tr)
 
-    tabla = document.getElementById("tabla"); //obtenemos la tabla
-    res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
-    filas = res.getElementsByTagName("tr"); //obtenemos todos los elementos tr (filas) del tbody
+        for (let i = 0; i <= 9; i++) {
+            t = i;
+            df = di + (vi * t) + (0.5 * a * Math.pow(t, 2));//formula distancia final
+            vf = vi + (a * t);//formula velocidad final
 
-    filaD = filas[0].getElementsByTagName("td"); //le asigna a filaD las celdas(td) de la fila[0] (tr)
-    filaV = filas[1].getElementsByTagName("td"); //le asigna a filaF las celdas(td) de la fila[1] (tr)
-
-    for (let i = 0; i <= 9; i++) {
-        t = i;
-        df = di + (vi * t) + (0.5 * a * Math.pow(t, 2));//formula distancia final
-        vf = vi + (a * t);//formula velocidad final
-
-        filaD[i].textContent = df.toFixed(2);//toFixed() para mostrar solo 2 decimales
-        filaV[i].textContent = vf.toFixed(2);
+            filaD[i].textContent = df.toFixed(2);//toFixed() para mostrar solo 2 decimales
+            filaV[i].textContent = vf.toFixed(2);
+        }
     }
 }
+
+var x = 0; //variable global
 
 /**
  * Hace que el auto se mueva a lo largo del canvas, teniendo en cuenta la velocidad inicial
  * @method animarImagen
  */
-
-var x = 0; //variable global
 let animarImagen = () => {
 
     const canvas = document.getElementById("mycanvas");
@@ -109,7 +108,6 @@ let comenzarAnimacion = () => {
  * Coloca al inicio del canvas la imagen del auto al cargar la pagina
  * @method aparecerImagen
  */
-
 let aparecerImagen = () => {
     const canvas = document.getElementById("mycanvas");
     const ctx = canvas.getContext("2d");

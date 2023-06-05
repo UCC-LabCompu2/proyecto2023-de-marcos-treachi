@@ -52,11 +52,6 @@ ul {
     float: right;
 }
 
-#imgautoperfil {
-    height: 200px;
-    width: 204px;
-}
-
 a {
     font-size: x-large;
     background-color: red;
@@ -96,7 +91,7 @@ table, td, th {
     margin-right: auto;
 }
 
-td{
+td {
     width: 50px;
 }
 
@@ -104,7 +99,7 @@ td{
     text-align: center;
 }
 
-#mycanvas{
+#mycanvas {
     background-color: white;
     text-align: center;
 }

@@ -14,6 +14,7 @@ Uniformemente Variado (MRUV)
 ### Herramientas usadas:
 - HTML 
 - CSS
+- JAVA SCRIPT
 
 
 
@@ -75,20 +76,20 @@ Estructura de Proyecto Lab de Compu II - 2023
 ## Requisitos del Segundo Parcial
 
 ### Sobre el proyecto general
-- [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
-- [ ] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
-- [ ] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
+- [x] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
+- [x] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
+- [x] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
 
 ### Sobre la funcionalidad JavaScript
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
-- [ ] Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
-- [ ] Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
-- [ ] Una función que realice un dibujo sobre un canvas (debe ser representativo y acorde a los valores ingreados).
-- [ ] El código Js debe estar en un archivo externo
-- [ ] Se debe emplear var, let o const según corresponda para mayor eficiencia
+- [x] Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
+- [x] Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
+- [x] Una función que realice un dibujo sobre un canvas (debe ser representativo y acorde a los valores ingreados).
+- [x] El código Js debe estar en un archivo externo
+- [x] Se debe emplear var, let o const según corresponda para mayor eficiencia
 
 ### Sobre la documentación
-- [ ] TODAS las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
+- [x] TODAS las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
    ```/**
      * Descripción de que hace la función
      * @method Nombre de la función
