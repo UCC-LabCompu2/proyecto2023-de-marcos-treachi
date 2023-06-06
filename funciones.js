@@ -15,9 +15,9 @@ let mostrarValor = (id, valor) => {
 let calcular = () => {
     let vi, di, a, tabla, res, t, vf, df, filaV, filaD, filas, i;
 
-    di = parseFloat(document.getElementById("x0").value); //obtenemos el valor de la posicion inicial ingresada
+    di = parseFloat(document.getElementById("x0").value); //obtenemos el valor de la posición inicial ingresada
     vi = parseFloat(document.getElementById("v0").value); //obtenemos el valor de la velocidad inicial ingresada
-    a = parseFloat(document.getElementById("a").value); //obtenemos el valor de la aceleracion ingresada
+    a = parseFloat(document.getElementById("a").value); //obtenemos el valor de la aceleración ingresada
 
     tabla = document.getElementById("tabla"); //obtenemos la tabla
     res = tabla.getElementsByTagName("tbody")[0]; //obtenemos todos los elementos del tbody de la tabla (los que contienen los resultados)
@@ -35,7 +35,7 @@ let calcular = () => {
 
         document.getElementById("valor_di").textContent = '0';
         document.getElementById("valor_vi").textContent = '0';
-        document.getElementById("valor_a").textContent = '0';//borra el numero del input
+        document.getElementById("valor_a").textContent = '0';//borra el número del input
 
         for (i = 0; i <= 9; i++) {
             filaD[i].textContent = ' ';
@@ -44,12 +44,12 @@ let calcular = () => {
         mostrarValor(id, valor = 0);
 
     } else {
-        for (i = 0; i <= 9; i++) {//calcula la tabla
+        for (i = 0; i <= 9; i++) {//calcula los resultados de la tabla
             t = i;
-            df = di + (vi * t) + (0.5 * a * Math.pow(t, 2));//formula distancia final
-            vf = vi + (a * t);//formula velocidad final
+            df = di + (vi * t) + (0.5 * a * Math.pow(t, 2));//fórmula distancia final
+            vf = vi + (a * t);//fórmula velocidad final
 
-            filaD[i].textContent = df.toFixed(2);//toFixed() para mostrar solo 2 decimales
+            filaD[i].textContent = df.toFixed(2);//asignamos los valores y usamos toFixed() para mostrar solo 2 decimales
             filaV[i].textContent = vf.toFixed(2);
         }
     }
@@ -77,7 +77,7 @@ let animarImagen = () => {
         ctx.drawImage(img, x, 0);
     }
 
-    if (vi >= 11.25) { //modifica velocidad de movimiento de la imagen segun la velocidad inicial ingresada en el input
+    if (vi >= 11.25) { //modifica velocidad de movimiento de la imagen según la velocidad inicial ingresada en el input
         dx = 2;
         x = x + dx;
     } else if ((vi >= 7.5) && (vi < 11.25)) {
@@ -92,7 +92,7 @@ let animarImagen = () => {
     }
 
     console.log("la coordenada x es: " + x);
-    if (x > 750) { //vuelve la animacion al inicio
+    if (x > 750) { //vuelve la animación al inicio
         x = 0;
     }
 }
@@ -103,16 +103,16 @@ let animarImagen = () => {
  */
 let detenerAuto = () => {
     console.log("Se detuvo el auto");
-    clearInterval(intervalId); // Detener la animación
+    clearInterval(intervalId); //detener la animación
 }
 
 /**
- * Da inicio a la animacion
+ * Da inicio a la animación
  * @method comenzarAnimacion
  */
 let comenzarAnimacion = () => {
     console.log("Comenzo la animacion");
-    x = 0;//reinicia posicion para que la imagen se mueva desde el origen
+    x = 0;//reinicia posición para que la imagen se mueva desde el origen
     intervalId = setInterval(animarImagen, 0);
     setTimeout(detenerAuto, 1500);
 }
