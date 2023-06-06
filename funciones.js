@@ -27,21 +27,21 @@ let calcular = () => {
     filaV = filas[1].getElementsByTagName("td"); //le asigna a filaF las celdas(td) de la fila[1] (tr)
 
     if ((vi === 0 && a === 0) || (vi === 0 && di === 0) || (di === 0 && a === 0) || (vi === 0 && di === 0 && a === 0)) {
-       alert("Solo 1 dato puede ser igual a 0.");
+        alert("Solo 1 dato puede ser igual a 0.");
 
         document.getElementById("x0").value = 0;
         document.getElementById("v0").value = 0;
         document.getElementById("a").value = 0;//reinicia la barra
 
-        document.getElementById("valor_di").textContent ='0';
-        document.getElementById("valor_vi").textContent ='0';
-        document.getElementById("valor_a").textContent ='0';//borra el numero del input
+        document.getElementById("valor_di").textContent = '0';
+        document.getElementById("valor_vi").textContent = '0';
+        document.getElementById("valor_a").textContent = '0';//borra el numero del input
 
         for (i = 0; i <= 9; i++) {
             filaD[i].textContent = ' ';
             filaV[i].textContent = ' ';//borra la tabla
         }
-        mostrarValor(id,valor=0);
+        mostrarValor(id, valor = 0);
 
     } else {
         for (i = 0; i <= 9; i++) {//calcula la tabla
@@ -112,6 +112,7 @@ let detenerAuto = () => {
  */
 let comenzarAnimacion = () => {
     console.log("Comenzo la animacion");
+    x = 0;//reinicia posicion para que la imagen se mueva desde el origen
     intervalId = setInterval(animarImagen, 0);
     setTimeout(detenerAuto, 1500);
 }
