@@ -28,20 +28,7 @@ let calcular = () => {
 
     if ((vi === 0 && a === 0) || (vi === 0 && di === 0) || (di === 0 && a === 0) || (vi === 0 && di === 0 && a === 0)) {
         alert("Solo 1 dato puede ser igual a 0.");
-
-        document.getElementById("x0").value = 0;
-        document.getElementById("v0").value = 0;
-        document.getElementById("a").value = 0;//reinicia la barra
-
-        document.getElementById("valor_di").textContent = '0';
-        document.getElementById("valor_vi").textContent = '0';
-        document.getElementById("valor_a").textContent = '0';//borra el número del input
-
-        for (i = 0; i <= 9; i++) {
-            filaD[i].textContent = ' ';
-            filaV[i].textContent = ' ';//borra la tabla
-        }
-        mostrarValor(id, valor = 0);
+        reiniciar();
 
     } else {
         for (i = 0; i <= 9; i++) {//calcula los resultados de la tabla
@@ -161,6 +148,4 @@ let reiniciar = () => {
         filaV[i].textContent = ' ';//borra la tabla
     }
     mostrarValor(id, valor = 0);
-
-
 }
