@@ -115,9 +115,10 @@ let aparecerImagen = () => {
     let img = new Image();
     img.src = "imagenes/autocanvas.png";
 
+    canvas.width = canvas.width;
+
     img.onload = function () {
-        canvas.width = canvas.width;
-        ctx.drawImage(img, x, 0);
+        ctx.drawImage(img, 0, 0);
     }
 }
 
@@ -147,5 +148,6 @@ let reiniciar = () => {
         filaD[i].textContent = ' ';
         filaV[i].textContent = ' ';//borra la tabla
     }
+    aparecerImagen();
     mostrarValor(id, valor = 0);
 }
