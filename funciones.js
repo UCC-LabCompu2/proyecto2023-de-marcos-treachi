@@ -55,7 +55,7 @@ let calcular = () => {
     }
 }
 
-var x = 0; //variable global
+let x = 0; //variable global
 
 /**
  * Hace que el auto se mueva a lo largo del canvas, teniendo en cuenta la velocidad inicial
@@ -132,4 +132,35 @@ let aparecerImagen = () => {
         canvas.width = canvas.width;
         ctx.drawImage(img, x, 0);
     }
+}
+
+/**
+ * Resetea los inputs y la tabla al apretar el boton "REINICIAR"
+ * @method reiniciar
+ */
+
+let reiniciar = () => {
+    let filaD, filaV, tabla, res, filas;
+    document.getElementById("x0").value = 0;
+    document.getElementById("v0").value = 0;
+    document.getElementById("a").value = 0;//reinicia la barra
+
+    document.getElementById("valor_di").textContent = '0';
+    document.getElementById("valor_vi").textContent = '0';
+    document.getElementById("valor_a").textContent = '0';//borra el número del input
+
+    tabla = document.getElementById("tabla");
+    res = tabla.getElementsByTagName("tbody")[0];
+    filas = res.getElementsByTagName("tr");
+
+    filaD = filas[0].getElementsByTagName("td");
+    filaV = filas[1].getElementsByTagName("td");
+
+    for (let i = 0; i <= 9; i++) {
+        filaD[i].textContent = ' ';
+        filaV[i].textContent = ' ';//borra la tabla
+    }
+    mostrarValor(id, valor = 0);
+
+
 }

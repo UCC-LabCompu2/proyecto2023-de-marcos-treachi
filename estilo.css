@@ -74,13 +74,6 @@ a:hover {
     text-align: left;
 }
 
-#botoncalc {
-    color: black;
-    background-color: red;
-    margin-left: 300px;
-    font-size: large;
-}
-
 table, td, th {
     border: 1px solid #000000;
     border-spacing: 0;
@@ -102,4 +95,17 @@ td {
 #mycanvas {
     background-color: white;
     text-align: center;
+}
+
+button {
+    color: black;
+    background-color: red;
+    margin: 0 10px;
+    font-size: large;
+    text-align: center;
+}
+
+.bot{
+    display: flex;
+    justify-content: center;
 }
