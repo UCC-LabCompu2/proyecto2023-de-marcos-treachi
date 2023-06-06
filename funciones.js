@@ -29,7 +29,6 @@ let calcular = () => {
     if ((vi === 0 && a === 0) || (vi === 0 && di === 0) || (di === 0 && a === 0) || (vi === 0 && di === 0 && a === 0)) {
         alert("Solo 1 dato puede ser igual a 0.");
         reiniciar();
-
     } else {
         for (i = 0; i <= 9; i++) {//calcula los resultados de la tabla
             t = i;
@@ -79,7 +78,7 @@ let animarImagen = () => {
     }
 
     console.log("la coordenada x es: " + x);
-    if (x > 750) { //vuelve la animación al inicio
+    if (x > 760) { //vuelve la animación al inicio
         x = 0;
     }
 }
