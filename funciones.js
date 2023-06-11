@@ -148,5 +148,4 @@ let reiniciar = () => {
         filaV[i].textContent = ' ';//borra la tabla
     }
     aparecerImagen();
-    mostrarValor(id, valor = 0);
 }
