@@ -38,6 +38,7 @@ let calcular = () => {
             filaD[i].textContent = df.toFixed(2);//asignamos los valores y usamos toFixed() para mostrar solo 2 decimales
             filaV[i].textContent = vf.toFixed(2);
         }
+        comenzarAnimacion();
     }
 }
 
@@ -90,6 +91,7 @@ let animarImagen = () => {
 let detenerAuto = () => {
     console.log("Se detuvo el auto");
     clearInterval(intervalId); //detener la animación
+    document.getElementById("botoncalc").disabled=false;
 }
 
 /**
@@ -100,6 +102,7 @@ let comenzarAnimacion = () => {
     console.log("Comenzo la animacion");
     x = 0;//reinicia posición para que la imagen se mueva desde el origen
     intervalId = setInterval(animarImagen, 0);
+    document.getElementById("botoncalc").disabled=true;
     setTimeout(detenerAuto, 1500);
 }
 
