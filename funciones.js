@@ -91,7 +91,7 @@ let animarImagen = () => {
 let detenerAuto = () => {
     console.log("Se detuvo el auto");
     clearInterval(intervalId); //detener la animación
-    document.getElementById("botoncalc").disabled=false;
+    document.getElementById("botoncalc").disabled = false;
 }
 
 /**
@@ -102,7 +102,7 @@ let comenzarAnimacion = () => {
     console.log("Comenzo la animacion");
     x = 0;//reinicia posición para que la imagen se mueva desde el origen
     intervalId = setInterval(animarImagen, 0);
-    document.getElementById("botoncalc").disabled=true;
+    document.getElementById("botoncalc").disabled = true;
     setTimeout(detenerAuto, 1500);
 }
 
