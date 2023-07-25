@@ -51,7 +51,7 @@ let x = 0; //variable global
 let animarImagen = () => {
 
     const canvas = document.getElementById("mycanvas");
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d"); //accede a los tags 2d de canvas
 
     let vi, dx;
     vi = parseFloat(document.getElementById("v0").value);
@@ -85,16 +85,6 @@ let animarImagen = () => {
 }
 
 /**
- * Detiene el movimiento de la imagen en el canvas
- * @method detenerAuto
- */
-let detenerAuto = () => {
-    console.log("Se detuvo el auto");
-    clearInterval(intervalId); //detener la animación
-    document.getElementById("botoncalc").disabled = false;
-}
-
-/**
  * Da inicio a la animación
  * @method comenzarAnimacion
  */
@@ -104,6 +94,16 @@ let comenzarAnimacion = () => {
     intervalId = setInterval(animarImagen, 0);
     document.getElementById("botoncalc").disabled = true;
     setTimeout(detenerAuto, 1500);
+}
+
+/**
+ * Detiene el movimiento de la imagen en el canvas
+ * @method detenerAuto
+ */
+let detenerAuto = () => {
+    console.log("Se detuvo el auto");
+    clearInterval(intervalId); //cancela el intervalo
+    document.getElementById("botoncalc").disabled = false;
 }
 
 /**
